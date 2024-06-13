@@ -71,16 +71,12 @@ div.hero_image img {
 span.raw_data_span {
   display: inline-block;
 
-  background: linear-gradient(
-    96.44deg,
-    #6b138c 40.01%,
-    #d2a6e2 58%,
-    #600881 74.94%
-  );
+  background: linear-gradient(96.44deg, #6B138C 0%, #D2A6E2 51%, #600881 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* text-fill-color: transparent; */
+  text-fill-color: transparent;
+  
 }
 
 /* shimmy */
