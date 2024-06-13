@@ -1,8 +1,9 @@
 /* fonts */
+/* Clash Display */
 
 @font-face {
   font-family: 'Clash Display';
-  src: url('/fonts/ClashDisplay-Variable.ttf') format('truetype');
+  src:url('/fonts/ClashDisplay-Variable.ttf') format('truetype');
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
@@ -10,11 +11,14 @@
 
 @font-face {
   font-family: 'General Sans';
-  src: url('/fonts/GeneralSans-Variable.ttf') format('truetype');
+  src:url('/fonts/GeneralSans-Variable.ttf') format('truetype');
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
 }
+
+
+
 
 
 /* fonts end */
@@ -24,7 +28,6 @@ body {
   color: white;
   font-family: 'General Sans';
   line-height: 1.5;
-  font-weight: 500;
   margin: 1rem;
   max-width: 100%;
 }
