@@ -17,7 +17,20 @@
   font-style: normal;
 }
 
+.grain {
+  position: absolute;
+width: 1920px;
+height: 12246px;
+left: 0px;
+top: 0px;
 
+background: url('/images/main/grain.webp'), #000000;
+mix-blend-mode: screen;
+opacity: 0.05;
+
+z-index: 10;
+
+}
 
 
 
@@ -51,6 +64,10 @@ a {
 /*  */
 
 .husig_header {
+
+position: relative;
+z-index: 20;
+
 /* Frame 111 */
 
 /* Auto layout */
