@@ -1,23 +1,49 @@
 {{ define "main" }}
-  <!-- {{ .Content }}
+<!-- {{ .Content }}
   {{ range site.RegularPages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{ .Summary }}
   {{ end }} -->
 
-
-
 <section class="hero_section">
   <div id="shimmyBackground"></div>
 
   <div class="hero_text">
-    Transform <span class="raw_data_span">Raw Data</span> Into Actionable Insights
+    <p>
+      Transform <span class="raw_data_span">Raw Data</span> Into Actionable
+      Insights
+    </p>
+    <p class="hero_desc">
+      We rapidly develop, refine, and deploy end-to-end analytics applications
+      using cutting-edge tools and capabilities you will need to make
+      intelligent business decisions.
+    </p>
+    <div class="logobutton">
+      <button id="hero-logo-button" class="husig_cta">
+        <img
+          src="../images/homepage/calendar_icon.svg"
+          alt="Logo"
+          class="logo"
+        />
+        <span class="button-text">Book a Free Discovery Call</span>
+      </button>
+    </div>
   </div>
   <div class="hero_image">
-    <img src="images/homepage/hero.webp" alt="husig hero image">
+    <img src="images/homepage/hero.webp" alt="husig hero image" />
   </div>
 </section>
 
-
+<div class="clients">
+  <h3>Trusted by Top Companies</h3>
+  <div class="clients_row">
+    <img src="../images/homepage/google_logo.svg.svg" alt="google" />
+    <img src="../images/homepage/google_logo.svg.svg" alt="google" />
+    <img src="../images/homepage/google_logo.svg.svg" alt="google" />
+    <img src="../images/homepage/google_logo.svg.svg" alt="google" />
+    <img src="../images/homepage/google_logo.svg.svg" alt="google" />
+    <img src="../images/homepage/google_logo.svg.svg" alt="google" />
+  </div>
+</div>
 
 {{ end }}
