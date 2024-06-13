@@ -1,22 +1,36 @@
 section.hero_section {
+
+    gap: 1.25vw;
  
+    align-content: space-between;
+
+
+    padding: 132px 6.25vw;
+    padding-bottom: 256px;
+
+    position: relative;
+    z-index: 20;
+
     display: flex;
     flex-direction: row;
 
-    
-    
+}
+
+
     div.hero_image img {
-    max-width: 43.125vw;
+    width: 100%;
+    object-fit: cover;        
     height: auto;
 }
 
 
-}
+
 
 div.hero_text {
     /* Transform Raw Data Into Actionable Insights */
 
-
+width: auto;
+min-width: 43.125vw;
 
 font-family: 'Clash Display';
 font-style: normal;
@@ -33,7 +47,7 @@ color: #FFFFFF;
 
 span.raw_data_span {
 
-
+display: inline-block;
 
 
 background: linear-gradient(96.44deg, #6B138C 40.01%, #D2A6E2 58%, #600881 74.94%);
@@ -44,5 +58,32 @@ background-clip: text;
 
 
 }
+
+
+
+/* shimmy */
+
+#shimmyBackground {
+/* Ellipse 31 */
+
+position: absolute;
+width: 139.16vw;
+height: 326.61px;
+left: -15.92vw;
+top: 296.22px;
+
+z-index: 0;
+
+/* amethyst-primary */
+background: #AD5ACC;
+opacity: 0.2;
+filter: blur(210px);
+transform: rotate(-15deg);
+
+overflow: hidden;
+
+}
+
+/*  */
 
 
