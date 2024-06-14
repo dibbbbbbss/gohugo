@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Clash Display";
-  src:url('../fonts/ClashDisplay-Variable.ttf') format('truetype');
+  src: url("../fonts/ClashDisplay-Variable.ttf") format("truetype");
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: "General Sans";
-  src:url('../fonts/GeneralSans-Variable.ttf') format('truetype');
+  src: url("../fonts/GeneralSans-Variable.ttf") format("truetype");
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
@@ -19,27 +19,24 @@
 
 .grain {
   position: absolute;
-width: 1920px;
-height: 12246px;
-left: 0px;
-top: 0px;
+  width: 1920px;
+  height: 12246px;
+  left: 0px;
+  top: 0px;
 
-background: url('../images/main/grain.webp'), #000000;
-mix-blend-mode: screen;
-opacity: 0.05;
+  background: url("../images/main/grain.webp"), #000000;
+  mix-blend-mode: screen;
+  opacity: 0.05;
 
-z-index: 10;
-
+  z-index: 10;
 }
-
-
 
 /* fonts end */
 
 body {
   background-color: rgba(16, 7, 28, 1);
   color: white;
-  font-family: 'General Sans';
+  font-family: "General Sans";
   line-height: 1.5;
   margin: 0px;
   padding: 0px;
@@ -63,28 +60,24 @@ a {
   text-decoration: none;
 }
 
-
 /*  */
 
 .husig_header {
+  position: relative;
+  z-index: 20;
 
-position: relative;
-z-index: 20;
+  /* Frame 111 */
 
-/* Frame 111 */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 6.25vw;
+  gap: 342px;
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 28px 6.25vw;
-gap: 342px;
-
-
-
-background: rgba(173, 90, 204, 0.1);
-backdrop-filter: blur(60px);
-/* Note: backdrop-filter has minimal browser support */
-
+  background: rgba(173, 90, 204, 0.1);
+  backdrop-filter: blur(60px);
+  /* Note: backdrop-filter has minimal browser support */
 }
+
