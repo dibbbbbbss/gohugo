@@ -294,3 +294,12 @@ div.right .learn_more_cta {
   width: 173px;
   margin-top: 32px;
 }
+
+
+#hero-logobutton {
+ 
+    display: unset;
+    align-items: unset;
+    align-content: unset;
+    flex-direction: unset;
+  }
