@@ -52,8 +52,7 @@ header {
 }
 
 footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+margin-top: 271px;
 }
 
 a {
@@ -81,3 +80,52 @@ a {
   backdrop-filter: blur(60px);
   /* Note: backdrop-filter has minimal browser support */
 }
+
+
+
+
+/*  */
+/*  */
+/*  */
+
+#contact-us{
+  background-image: url("../images/homepage/contact_us_background.png");
+  width:80vw;
+  height: 40.67vw;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: contain;
+  pointer-events: none;
+
+  border-radius: 16px;
+  border: 1px solid rgba(173, 90, 204, 1);
+
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+
+
+  .husig_h2_tag {
+    padding: 0;
+    margin: 0;
+  }
+
+
+  #left-contact {
+
+    margin-top: 83px;
+    margin-left: 7.39vw;
+
+  }
+
+  #right-contact {
+    width: max-content;
+  }
+
+  #right-contact *{
+    pointer-events: unset !important;
+  }
+}
+
+/* end #3 */
