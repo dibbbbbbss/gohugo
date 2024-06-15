@@ -47,14 +47,24 @@
   #sec5-content-grid {
     display: flex;
     flex-direction: column;
+    gap: calc((118/ 1920) * 100vw);
 
     #top-grid {
       display: flex;
       flex-direction: row;
+      gap: calc((93/ 1920) * 100vw);
     }
+
     #bottom-grid {
       display: flex;
       flex-direction: row;
+      gap: calc((93/ 1920) * 100vw);
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+
     }
   }
+
+  padding-bottom: 265px;
 }

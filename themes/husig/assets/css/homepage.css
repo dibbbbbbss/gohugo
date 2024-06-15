@@ -92,25 +92,23 @@ span.raw_data_span {
 }
 
 /* shimmy */
+/* 
+      #shimmyBackground {
 
-#shimmyBackground {
-  /* Ellipse 31 */
+        position: absolute;
+        width: 139.16vw;
+        height: 326.61px;
+        left: -15.92vw;
+        top: 296.22px;
 
-  position: absolute;
-  width: 139.16vw;
-  height: 326.61px;
-  left: -15.92vw;
-  top: 296.22px;
+        z-index: 0;
 
-  z-index: 0;
-
-  /* amethyst-primary */
-  background: #ad5acc;
-  opacity: 0.2;
-  filter: blur(420px);
-  transform: rotate(-15deg);
-  overflow: hidden;
-}
+        background: #ad5acc;
+        opacity: 0.2;
+        filter: blur(420px);
+        transform: rotate(-15deg);
+        overflow: hidden;
+      } */
 
 /*  */
 

@@ -33,3 +33,30 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // endn
+
+// THE CODE FOR HOMEPAGE FAQ GOES HERE
+
+document.addEventListener("DOMContentLoaded", () => {
+  const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+  accordionHeaders.forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        content.style.padding = "0 15px";
+      } else {
+        document.querySelectorAll(".accordion-content").forEach(c => {
+          c.style.maxHeight = null;
+          c.style.padding = "0 15px";
+        });
+        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.padding = "15px";
+      }
+    });
+  });
+});
+
+
+// END FAQ
