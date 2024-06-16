@@ -1,30 +1,68 @@
 <section id="contact-us">
-    <div id="left-contact">
-        <h2 class="husig_h2_tag">Contact Us</h2>
+  <div id="left-contact">
+    <h2 class="husig_h2_tag">Contact Us</h2>
+  </div>
+  <div id="right-contact">
+    <div class="label_group">
+      <label for="">Name</label>
+      <input type="text" id="contact-name" type="text" />
     </div>
-    <div id="right-contact">
 
-        <div class="label_group">
-            <label for="">Name</label>
-        <input type="text" id="contact-name" type="text">
-        </div>
-
-        <div class="label_group">
-            <label for="">Email</label>
-        <input type="text" id="contact-email" type="text">
-        </div>
-        
-       <div class="label_group">
-        <label for="">Message</label>
-        <textarea name="" id="contact-message"></textarea>
-       </div>
-
-        <button class="husig_cta" id="contact-us-cta" >
-            Contact Us
-        </button>
-
+    <div class="label_group">
+      <label for="">Email</label>
+      <input type="text" id="contact-email" type="text" />
     </div>
+
+    <div class="label_group">
+      <label for="">Message</label>
+      <textarea name="" id="contact-message"></textarea>
+    </div>
+
+    <button class="husig_cta" id="contact-us-cta">Contact Us</button>
+  </div>
 </section>
 
+<section id="footer-section">
+  <div id="footer-top">
+    <div id="footer-col-1">
+      <div class="logo" id="footer-logo">
+        {{ partial "my_components/logosvg.html"}}
+      </div>
+      <div id="footer-logo-row">
+        <a href="" class="footer_logo_link"
+          ><img src="images/main/x.svg" alt="x" class="footer_logo" /></a
+        ><a href="" class="footer_logo_link"
+          ><img
+            src="images/main/insta.svg"
+            alt="insta"
+            class="footer_logo" /></a
+        ><a href="" class="footer_logo_link"
+          ><img
+            src="images/main/facebook.svg"
+            alt="fb"
+            class="footer_logo" /></a
+        ><a href="" class="footer_logo_link"
+          ><img
+            src="images/main/linkdin.svg"
+            alt="linkedin"
+            class="footer_logo"
+        /></a>
+      </div>
+      <button class="husig_cta">Contact Us</button>
+    </div>
+    <div id="col_1" class="footer_text_links"></div>
+    <div id="col_2" class="footer_text_links"></div>
+    <div id="col_3" class="footer_text_links"></div>
+  </div>
+  <div id="footer-bottom">
+    <p class="footer_copyright">
+      HuSig @ Copyright {{ now.Year }}, All rights reserved.
+    </p>
 
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+    <div class="footer_declarations">
+      <a class="footer_copyright" href="">Privacy Policy</a>
+
+      <a class="footer_copyright" href="">Terms & Conditions</a>
+    </div>
+  </div>
+</section>
