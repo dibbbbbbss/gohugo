@@ -29,16 +29,23 @@
     accordionHeaders.forEach((header) => {
       header.addEventListener("click", () => {
         const content = header.nextElementSibling;
+        const icon = header.querySelector(".open_close");
         if (content.style.maxHeight) {
           content.style.maxHeight = null;
-          content.style.padding = "0 15px";
+          content.style.padding = "0 32px";
+          icon.classList.remove("rotate-icon");
         } else {
           document.querySelectorAll(".accordion-content").forEach((c) => {
             c.style.maxHeight = null;
-            c.style.padding = "0 15px";
+            c.style.padding = "0 32px";
+            const otherIcon = c.previousElementSibling.querySelector(".open_close");
+            if (otherIcon) {
+              otherIcon.classList.remove("rotate-icon");
+            }
           });
-          content.style.maxHeight = content.scrollHeight + "px";
-          content.style.padding = "15px";
+          content.style.maxHeight = "62px";
+          content.style.padding = "8px 32px 22px 32px";
+          icon.classList.add("rotate-icon");
         }
       });
     });
