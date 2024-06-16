@@ -20,7 +20,7 @@ section#home-testimonials-section {
 
   #slider-container {
     max-width: 100%;
-    overflow-x: auto;
+    overflow-x: hidden;
     position: relative;
     height: auto;
   }
@@ -66,6 +66,8 @@ section#home-testimonials-section {
       padding: 45px 40px 40px 40px;
 
       box-sizing: border-box;
+
+      user-select: none;
     }
 
     .card_image {
