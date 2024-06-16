@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const accordionHeaders = document.querySelectorAll(".accordion-header");
 
-  accordionHeaders.forEach(header => {
+  accordionHeaders.forEach((header) => {
     header.addEventListener("click", () => {
       const content = header.nextElementSibling;
 
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         content.style.maxHeight = null;
         content.style.padding = "0 15px";
       } else {
-        document.querySelectorAll(".accordion-content").forEach(c => {
+        document.querySelectorAll(".accordion-content").forEach((c) => {
           c.style.maxHeight = null;
           c.style.padding = "0 15px";
         });
@@ -58,5 +58,34 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 // END FAQ
+
+//-------------------
+//nav bar js
+
+document.addEventListener("DOMContentLoaded", function () {
+  var dropdowns = document.querySelectorAll(".dropdown-toggle");
+  dropdowns.forEach(function (dropdown) {
+    dropdown.addEventListener("click", function (e) {
+      e.preventDefault();
+      var dropdownMenu = this.nextElementSibling;
+      dropdownMenu.style.display =
+        dropdownMenu.style.display === "block" ? "none" : "block";
+    });
+  });
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.addEventListener("click", function (e) {
+    dropdowns.forEach(function (dropdown) {
+      var dropdownMenu = dropdown.nextElementSibling;
+      if (
+        dropdownMenu.style.display === "block" &&
+        !dropdownMenu.contains(e.target) &&
+        !dropdown.contains(e.target)
+      ) {
+        dropdownMenu.style.display = "none";
+      }
+    });
+  });
+});
+//-------E N D-----------

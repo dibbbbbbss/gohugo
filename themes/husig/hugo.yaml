@@ -1,0 +1,81 @@
+baseURL: 'https://example.org/'
+languageCode: 'en-us'
+title: 'Husig AI'
+
+menu:
+  main:
+    - name: "Company"
+      identifier: "company_child"
+      url: "#"
+      weight: 1
+
+    - name: "About"
+      parent: "company_child"
+      url: "/about/"
+      weight: 1
+
+    - name: "Our Team"
+      parent: "company_child"
+      url: "/our-team/"
+      weight: 1
+
+    - name: "Careers"
+      parent: "company_child"
+      url: "/careers/"
+      weight: 1
+
+    - name: "Blogs"
+      parent: "company_child"
+      url: "/blogs/"
+      weight: 1
+
+# services tab
+    - name: "Services" 
+      identifier: "services_child"
+      url: "#"
+      weight: 2
+
+    - name: "Analytics"
+      parent: "services_child"
+      url: "/analytics/"
+      weight: 2
+
+    - name: "Decision Sciences"
+      parent: "services_child"
+      url: "/decision-sciences/"
+      weight: 2
+
+    - name: "Data Engineering and Infra"
+      parent: "services_child"
+      url: "/data-engineering-and-infra/"
+      weight: 2
+
+
+# platforms tab
+    - name: "Platforms"
+      identifier: "platforms_child"
+      url: "#"
+      weight: 3
+
+    - name: "HuSig Fabri"
+      parent: "platforms_child"
+      url: "/husig-fabri/"
+      weight: 3
+
+    - name: "HuSig Incog"
+      parent: "platforms_child"
+      url: "/husig-incog/"
+      weight: 3
+
+    - name: "HuSig Harmony"
+      parent: "platforms_child"
+      url: "/husig-harmony/"
+      weight: 3
+
+    
+
+
+module:
+  hugoVersion:
+    extended: false
+    min: "0.116.0"

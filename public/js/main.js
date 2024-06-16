@@ -43,4 +43,22 @@
       });
     });
   });
+  document.addEventListener("DOMContentLoaded", function() {
+    var dropdowns = document.querySelectorAll(".dropdown-toggle");
+    dropdowns.forEach(function(dropdown) {
+      dropdown.addEventListener("click", function(e) {
+        e.preventDefault();
+        var dropdownMenu = this.nextElementSibling;
+        dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+      });
+    });
+    window.addEventListener("click", function(e) {
+      dropdowns.forEach(function(dropdown) {
+        var dropdownMenu = dropdown.nextElementSibling;
+        if (dropdownMenu.style.display === "block" && !dropdownMenu.contains(e.target) && !dropdown.contains(e.target)) {
+          dropdownMenu.style.display = "none";
+        }
+      });
+    });
+  });
 })();
