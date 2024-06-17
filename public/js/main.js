@@ -101,4 +101,26 @@
       scrollContainer.scrollLeft = scrollLeft - walk;
     });
   });
+  document.addEventListener("DOMContentLoaded", function() {
+    function toggleDropdown_123() {
+      var dropdownMenu = document.getElementById("dropdownMenu_123");
+      if (dropdownMenu.style.display === "block") {
+        dropdownMenu.style.display = "none";
+      } else {
+        dropdownMenu.style.display = "block";
+      }
+    }
+    document.querySelector(".dropdown-toggle_123").onclick = toggleDropdown_123;
+    window.onclick = function(event) {
+      if (!event.target.matches(".dropdown-toggle_123")) {
+        var dropdowns = document.getElementsByClassName("dropdown-menu_123");
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.style.display === "block") {
+            openDropdown.style.display = "none";
+          }
+        }
+      }
+    };
+  });
 })();

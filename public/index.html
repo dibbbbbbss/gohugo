@@ -8,6 +8,9 @@
 
 
 
+    <link rel="stylesheet" href="/css/responsive/mobile/homepageMobileResponsive.css">
+
+
     <link rel="stylesheet" href="/css/contact_us_form.css">
 
 
@@ -179,7 +182,9 @@
 
 
 
-<div id="heroSectionShimmy" class="Shimmy_sza"></div>
+<div class="Shimmy_sza_container">
+  <div id="heroSectionShimmy" class="Shimmy_sza"></div>
+</div>
 
 <section class="hero_section">
   <div class="hero_text">
@@ -204,8 +209,11 @@
   </div>
 </section>
 
-<div class="clients">
+<div id="trusted-by-top-companies">
   <h3>Trusted by Top Companies</h3>
+</div>
+
+<div class="clients">
   <div class="clients_row">
     <img
       src="images/homepage/google_logo.svg.svg"
@@ -231,194 +239,218 @@
 
 
 <section id="homepage-section-2">
-  <div id="Section2Shimmy" class="Shimmy_sza"></div>
+  <div class="Shimmy_sza_container">
+    <div id="Section2Shimmy" class="Shimmy_sza"></div>
+  </div>
 
   <h1 class="husig_h2_tag" id="analysis-to-action">
     From Analysis to Action: Services That Drive Results
   </h1>
-  <div id="sec2-buttons" style="height: 96px">
-    <button class="sec2_inactive_class tab_button active" data-tab="tab1">
-      Analytics
-    </button>
-    <button class="sec2_inactive_class tab_button" data-tab="tab2">
-      Decision Sciences
-    </button>
-    <button class="sec2_inactive_class tab_button" data-tab="tab3">
-      Data Engineering and Infra
-    </button>
+
+  
+  <div class="dropdown-mobile_123">
+    <button class="dropdown-toggle_123" onclick="toggleDropdown_123()">Services &#9662;</button>
+    <div class="dropdown-menu_123" id="dropdownMenu_123">
+      <button class="sec2_inactive_class tab_button" data-tab="tab1">
+        Analytics
+      </button>
+      <button class="sec2_inactive_class tab_button" data-tab="tab2">
+        Decision Sciences
+      </button>
+      <button class="sec2_inactive_class tab_button" data-tab="tab3">
+        Data Engineering and Infra
+      </button>
+    </div>
   </div>
 
-  <div>
-    <div class="tab-content active" id="tab1">
-      <div class="left">
-        <img
-          class="sec2_illust"
-          src="images/homepage/Analytics.webp"
-          alt="Analytics Illustration"
-        />
-      </div>
-      <div class="right">
-        <h2 class="purple_h2">Analytics</h2>
-        <div class="icon_list_div">
-          <ul class="icon-list husig_h3_tag">
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Comprehensive Data Integration and Automation
-            </li>
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Tailored Analytical Solutions
-            </li>
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Advanced Reporting and Visualization
-            </li>
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Expertise in Leading Technologies
-            </li>
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />End-to-End Analytics Services
-            </li>
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Client-Centric Approach
-            </li>
-          </ul>
-        </div>
-        <button class="husig_cta learn_more_cta">Learn More</button>
-      </div>
+  <div id="nulla">
+
+    <div id="sec2-buttons" style="height: 96px">
+      <button class="sec2_inactive_class tab_button active" data-tab="tab1">
+        Analytics
+      </button>
+      <button class="sec2_inactive_class tab_button" data-tab="tab2">
+        Decision Sciences
+      </button>
+      <button class="sec2_inactive_class tab_button" data-tab="tab3">
+        Data Engineering and Infra
+      </button>
+    </div> 
+
     </div>
 
-    <div class="tab-content" id="tab2">
-      <div class="left">
-        <img
-          class="sec2_illust"
-          src="images/homepage/DecisionSciences.webp"
-          alt="Analytics Illustration"
-        />
-      </div>
-      <div class="right">
-        <h2 class="purple_h2">Decision Sciences</h2>
-        <div class="icon_list_div">
-          <ul class="icon-list husig_h3_tag">
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Strategic Consulting and Framework Development
-            </li>
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Operational Research and Optimization
-            </li>
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Scenario Analysis and Risk Management
-            </li>
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Expertise in Leading Technologies
-            </li>
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />End-to-End Decision Science Services
-            </li>
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Client-Centric Approach
-            </li>
-          </ul>
+    <div id="homepage-tabs-1221">
+      <div class="tab-content active" id="tab1">
+        <div class="left">
+          <img
+            class="sec2_illust"
+            src="images/homepage/Analytics.webp"
+            alt="Analytics Illustration"
+          />
         </div>
-        <button class="husig_cta learn_more_cta">Learn More</button>
+        <div class="right">
+          <h2 class="purple_h2">Analytics</h2>
+          <div class="icon_list_div">
+            <ul class="icon-list husig_h3_tag">
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Comprehensive Data Integration and Automation
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Tailored Analytical Solutions
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Advanced Reporting and Visualization
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Expertise in Leading Technologies
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />End-to-End Analytics Services
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Client-Centric Approach
+              </li>
+            </ul>
+          </div>
+          <button class="husig_cta learn_more_cta">Learn More</button>
+        </div>
       </div>
-    </div>
 
-    <div class="tab-content" id="tab3">
-      <div class="left">
-        <img
-          class="sec2_illust"
-          src="images/homepage/DataEng.webp"
-          alt="Analytics Illustration"
-        />
-      </div>
-      <div class="right">
-        <h2 class="purple_h2">Data Engineering and Infra</h2>
-        <div class="icon_list_div">
-          <ul class="icon-list husig_h3_tag">
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Modernization and Optimization
-            </li>
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Data Governance and Compliance
-            </li>
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Infrastructure Management and Optimization
-            </li>
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Data Engineering Services
-            </li>
-            <li>
-              <img
-                src="images/homepage/list_icon.svg"
-                alt="list icon"
-                class="list_icon_image"
-              />Training and Best Practices
-            </li>
-          </ul>
+      <div class="tab-content" id="tab2">
+        <div class="left">
+          <img
+            class="sec2_illust"
+            src="images/homepage/DecisionSciences.webp"
+            alt="Analytics Illustration"
+          />
         </div>
-        <button class="husig_cta learn_more_cta">Learn More</button>
+        <div class="right">
+          <h2 class="purple_h2">Decision Sciences</h2>
+          <div class="icon_list_div">
+            <ul class="icon-list husig_h3_tag">
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Strategic Consulting and Framework Development
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Operational Research and Optimization
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Scenario Analysis and Risk Management
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Expertise in Leading Technologies
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />End-to-End Decision Science Services
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Client-Centric Approach
+              </li>
+            </ul>
+          </div>
+          <button class="husig_cta learn_more_cta">Learn More</button>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab3">
+        <div class="left">
+          <img
+            class="sec2_illust"
+            src="images/homepage/DataEng.webp"
+            alt="Analytics Illustration"
+          />
+        </div>
+        <div class="right">
+          <h2 class="purple_h2">Data Engineering and Infra</h2>
+          <div class="icon_list_div">
+            <ul class="icon-list husig_h3_tag">
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Modernization and Optimization
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Data Governance and Compliance
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Infrastructure Management and Optimization
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Data Engineering Services
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Training and Best Practices
+              </li>
+            </ul>
+          </div>
+          <button class="husig_cta learn_more_cta">Learn More</button>
+        </div>
       </div>
     </div>
   </div>
@@ -444,6 +476,10 @@
   </h1>
 
   <div class="section_3_companies">
+
+    <img id="mbl-teks-213" src="images/main/technologies_mobile_view.png" alt="tec">
+
+
     <div class="clients_row" id="row-1-techs">
       <img
         src="images/homepage/companies/tableau_logo.svg.svg"
@@ -511,11 +547,10 @@
       />
 
       <img
-      src="images/homepage/companies/snowflake_logo.svg.svg"
-      alt="snowflake"
-      width="301.66px"
-    />
-
+        src="images/homepage/companies/snowflake_logo.svg.svg"
+        alt="snowflake"
+        width="301.66px"
+      />
 
       <img
         src="images/homepage/companies/labelbox_logo.svg.svg"
@@ -529,7 +564,9 @@
  
 
 <section id="home-sec-4">
-  <div id="Section4Shimmy" class="Shimmy_sza"></div>
+  <div class="Shimmy_sza_container">
+    <div id="Section4Shimmy" class="Shimmy_sza"></div>
+  </div>
 
   <h1 class="husig_h2_tag" id="h1-a-1">
     Our Flexible Engagement Models Tailored to Your Needs for Seamless
@@ -669,8 +706,10 @@
  
 
 <section id="home-sec-5">
+  <div class="Shimmy_sza_container">
+
   <div id="Section5Shimmy" class="Shimmy_sza">
-  </div>
+  </div> </div>
 
   <h1 class="husig_h2_tag" id="">
     For Us, Confidentiality and Data Privacy Are Paramount to the Success and
@@ -758,8 +797,10 @@
  
  <section id="home-testimonials-section">
 
+  <div class="Shimmy_sza_container">
+
   <div id="Section6Shimmy" class="Shimmy_sza">
-  </div>
+  </div></div>
 
   <div id="what-our-clients-say">
     <h2 class="husig_h2_tag">What Our Clients Say</h2>
@@ -970,9 +1011,10 @@
 
 <section id="faq-accordion">
 
+  <div class="Shimmy_sza_container">
 
   <div id="Section7Shimmy" class="Shimmy_sza">
-  </div>
+  </div></div>
 
 
   <div id="cat-1" class="faq-cat">Category 1</div>

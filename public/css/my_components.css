@@ -77,7 +77,7 @@
 
 /* background shimmy */
 .Shimmy_sza {
-  display: flex;
+  display: none;
   position: absolute !important;
   width: calc((2672 / 1920) * 100vw);
   height: 326.61px;
@@ -116,11 +116,9 @@
   opacity: 0.1;
 }
 
-
 /* homepage companies ROW */
 div.section_3_companies {
-
-  *{
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -129,33 +127,51 @@ div.section_3_companies {
   display: flex;
   flex-direction: column;
 
- #row-1-techs {
-  min-width: calc((1213/1920)*100vw);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  
- }
- #row-2-techs {
-  width: calc((1041/1920)*100vw);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: center;
-
-  
- }
- #row-3-techs {
-  min-width: calc((1213/1920)*100vw);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  
- }
-
-
-
+  #row-1-techs {
+    min-width: calc((1213 / 1920) * 100vw);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #row-2-techs {
+    width: calc((1041 / 1920) * 100vw);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+  }
+  #row-3-techs {
+    min-width: calc((1213 / 1920) * 100vw);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 /* end */
+
+div#trusted-by-top-companies {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  h3 {
+    font-family: "Clash Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+
+    /* white */
+    color: #ffffff;
+
+    opacity: 0.2;
+
+
+  }
+}
+
+div.dropdown-mobile_123 {
+  display: none ;
+}
+
+
