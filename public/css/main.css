@@ -228,7 +228,11 @@ section#footer-section {
   height: 642px;
   width: 100vw;
   padding: 117px 6.25vw;
-  background: linear-gradient(180deg, rgba(173, 90, 204, 0.2) 0%, rgba(87, 45, 102, 0.2) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(173, 90, 204, 0.2) 0%,
+    rgba(87, 45, 102, 0.2) 100%
+  );
 }
 section#footer-section .footer-col-2 {
   display: flex;
@@ -333,4 +337,38 @@ main * {
 
 main {
   margin-top: 136px;
+}
+
+@media (max-width: 768px) {
+
+
+  .husig_header .cta {
+    display: none;
+  }
+
+  .husig_header nav.header_menu{
+    display: none;
+  }
+
+  main {
+    margin-top: 80px;
+  }
+
+  .husig_header {
+    height: 80px;
+  }
+
+  .husig_header .logo svg {
+    width: calc((96/393)*100vw);
+  }
+
+  .husig_header .logo {
+    width: max-content;
+  }
+
+  .husig_header {
+    overflow-y: hidden;
+    align-items: first baseline;
+  }
+
 }
