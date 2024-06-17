@@ -1,5 +1,4 @@
 /* book a call CTA Styles */
-
 #book-a-call {
   box-sizing: border-box;
   display: flex;
@@ -25,13 +24,10 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-
   color: #ffffff;
-
   flex: none;
   order: 0;
   flex-grow: 0;
-
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -79,17 +75,17 @@
 .Shimmy_sza {
   display: none;
   position: absolute !important;
-  width: calc((2672 / 1920) * 100vw);
+  width: 139.1666666667vw;
   height: 326.61px;
   background: #ad5acc;
   opacity: 0.2;
   filter: blur(210px);
   transform: rotate(-15deg);
-  right: calc(50vw - calc((2672 / 1920) * 50vw));
+  right: -19.5833333333vw;
 }
 
 #heroSectionShimmy {
-  top: calc((400 / 1920) * 100vw);
+  top: 20.8333333333vw;
 }
 
 #Section2Shimmy {
@@ -118,60 +114,52 @@
 
 /* homepage companies ROW */
 div.section_3_companies {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   display: flex;
   flex-direction: column;
-
-  #row-1-techs {
-    min-width: calc((1213 / 1920) * 100vw);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  #row-2-techs {
-    width: calc((1041 / 1920) * 100vw);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-self: center;
-  }
-  #row-3-techs {
-    min-width: calc((1213 / 1920) * 100vw);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
-/* end */
+div.section_3_companies * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div.section_3_companies #row-1-techs {
+  min-width: 63.1770833333vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div.section_3_companies #row-2-techs {
+  width: 54.21875vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+}
+div.section_3_companies #row-3-techs {
+  min-width: 63.1770833333vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+/* end */
 div#trusted-by-top-companies {
   display: flex;
   align-self: center;
   justify-content: center;
   align-content: center;
-  h3 {
-    font-family: "Clash Display";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 39px;
-
-    /* white */
-    color: #ffffff;
-
-    opacity: 0.2;
-
-
-  }
+}
+div#trusted-by-top-companies h3 {
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  /* white */
+  color: #ffffff;
+  opacity: 0.2;
 }
 
 div.dropdown-mobile_123 {
-  display: none ;
+  display: none;
 }
-
-

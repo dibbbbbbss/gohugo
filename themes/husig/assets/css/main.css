@@ -1,6 +1,5 @@
 /* fonts */
 /* Clash Display */
-
 * {
   box-sizing: border-box !important;
 }
@@ -12,7 +11,6 @@
   font-display: swap;
   font-style: normal;
 }
-
 @font-face {
   font-family: "General Sans";
   src: url("../fonts/GeneralSans-Variable.ttf") format("truetype");
@@ -35,11 +33,9 @@
 
   z-index: 10;
 } */
-
 /* fonts end */
-
 body {
-  background-color: rgba(16, 7, 28, 1);
+  background-color: rgb(16, 7, 28);
   color: white;
   font-family: "General Sans";
   line-height: 1.5;
@@ -63,23 +59,19 @@ body::after {
   opacity: 0.05; /* Adjust the opacity of the background image */
   z-index: -1; /* Ensure the background image stays behind content */
   pointer-events: none;
-
   mix-blend-mode: screen;
 }
 
 header {
   background: rgba(173, 90, 204, 0.1);
-
   min-width: 100vw;
-
   position: fixed;
   top: 0;
   z-index: 200;
-
-  ul {
-    padding: 0;
-    margin: 0;
-  }
+}
+header ul {
+  padding: 0;
+  margin: 0;
 }
 
 footer {
@@ -92,158 +84,133 @@ a {
 }
 
 /*  */
-
 .husig_header {
   backdrop-filter: blur(60px);
   -webkit-backdrop-filter: blur(60px);
-
-  .header_menu {
-    width: max-content;
-
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    box-sizing: border-box;
-
-    left: calc(50vw - 306px);
-
-    .navbar {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0;
-      margin: 0;
-      /* background-color: #343a40; */
-      height: 100%;
-
-      /* Frame 114 */
-
-      /* Services */
-
-      font-family: "General Sans";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 27px;
-
-      color: #ffffff;
-    }
-
-    .navbar-nav {
-      display: flex;
-      flex-direction: column;
-      padding-left: 0;
-      margin-bottom: 0;
-      list-style: none;
-      min-height: 100%;
-
-      gap: calc((128 / 1920) * 100vw);
-    }
-    .nav-item {
-      position: relative;
-    }
-    .nav-link {
-      min-height: 100%;
-
-      color: white;
-      display: block;
-      text-decoration: none;
-      margin: 0;
-      padding: 0;
-
-      display: flex;
-      align-items: center;
-    }
-    .nav-link:hover {
-      /* background-color: #495057; */
-      color: rgb(219, 219, 219);
-    }
-    .dropdown-menu {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      z-index: 1000;
-      display: none;
-      float: left;
-      text-align: left;
-      list-style: none;
-      background-color: rgba(173, 90, 204, 0.1);
-      backdrop-filter: blur(60px);
-      min-width: calc((343 / 1920) * 100vw);
-
-      padding: 16px;
-
-      a {
-        padding: 0;
-        margin: 0;
-        padding: 16px;
-      }
-    }
-    .dropdown-item {
-      display: block;
-      width: 100%;
-      padding: 0.25rem 1.5rem;
-      clear: both;
-
-      text-align: inherit;
-      white-space: nowrap;
-      background-color: transparent;
-      border: 0;
-      text-decoration: none;
-
-      font-family: "General Sans";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 27px;
-
-      color: #ffffff;
-    }
-    .dropdown-item:hover {
-      text-decoration: none;
-    }
-    @media (min-width: 992px) {
-      .navbar-nav {
-        flex-direction: row;
-      }
-      .dropdown-menu {
-        position: absolute;
-      }
-    }
-  }
-
-  .logo {
-    width: 185px;
-    height: auto;
-  }
-
   position: relative;
   z-index: 20;
-
   /* Frame 111 */
-
   /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
   padding: 28px 6.25vw;
   /* gap: 342px; */
-
   min-width: 100%;
-
-  #navbarDropdown::after {
-    content: "";
-    color: white;
-    margin-left: calc((8 / 1920) * 100vw);
-    background-image: url("../images/main/DropDownReal.svg");
-    width: 20px;
-    height: 20px;
+}
+.husig_header .header_menu {
+  width: max-content;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  left: calc(50vw - 306px);
+}
+.husig_header .header_menu .navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  /* background-color: #343a40; */
+  height: 100%;
+  /* Frame 114 */
+  /* Services */
+  font-family: "General Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.husig_header .header_menu .navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  min-height: 100%;
+  gap: 6.6666666667vw;
+}
+.husig_header .header_menu .nav-item {
+  position: relative;
+}
+.husig_header .header_menu .nav-link {
+  min-height: 100%;
+  color: white;
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.husig_header .header_menu .nav-link:hover {
+  /* background-color: #495057; */
+  color: rgb(219, 219, 219);
+}
+.husig_header .header_menu .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  text-align: left;
+  list-style: none;
+  background-color: rgba(173, 90, 204, 0.1);
+  backdrop-filter: blur(60px);
+  min-width: 17.8645833333vw;
+  padding: 16px;
+}
+.husig_header .header_menu .dropdown-menu a {
+  padding: 0;
+  margin: 0;
+  padding: 16px;
+}
+.husig_header .header_menu .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  text-decoration: none;
+  font-family: "General Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.husig_header .header_menu .dropdown-item:hover {
+  text-decoration: none;
+}
+@media (min-width: 992px) {
+  .husig_header .header_menu .navbar-nav {
+    flex-direction: row;
   }
+  .husig_header .header_menu .dropdown-menu {
+    position: absolute;
+  }
+}
+.husig_header .logo {
+  width: 185px;
+  height: auto;
+}
+.husig_header #navbarDropdown::after {
+  content: "";
+  color: white;
+  margin-left: 0.4166666667vw;
+  background-image: url("../images/main/DropDownReal.svg");
+  width: 20px;
+  height: 20px;
 }
 
 /* f o o t e r  c o d e */
@@ -260,133 +227,105 @@ section#footer-section {
   margin-top: 198px;
   height: 642px;
   width: 100vw;
-
-  padding: 117px calc((120 / 1920) * 100vw);
-
-  background: linear-gradient(
-    180deg,
-    rgba(173, 90, 204, 0.2) 0%,
-    rgba(87, 45, 102, 0.2) 100%
-  );
-
-  .footer-col-2 {
-    display: flex;
-    flex-direction: row;
-    width: calc((1014 / 1920) * 100vw);
-    justify-content: space-between;
-
-  }
-
-  #footer-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    /* #col_1 {
-      background: rgb(52, 37, 62);
-      width: 112px;
-      height: 272px;
-    }
-
-    #col_2 {
-      background: rgb(52, 37, 62);
-      width: 174px;
-      height: 272px;
-    }
-
-    #col_3 {
-      background: rgb(52, 37, 62);
-      width: 292px;
-      height: 272px;
-    } */
-
-    #footer-logo svg {
-      width: 256px;
-      height: auto;
-    }
-
-    #footer-logo-row {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-end;
-      align-content: flex-start;
-      align-items: center;
-      margin-top: 25px;
-      margin-left: calc((4 / 1920) * 100vw);
-      gap: calc((32 / 1920) * 100vw);
-      margin-bottom: 67px;
-    }
-
-    .husig_cta {
-      width: 403px;
-      height: 86px;
-    }
-  }
-
-  #footer-bottom {
-    margin-top: 51px;
-    border-top: 1px solid white;
-
-    display: flex;
-
-    p {
-      margin: 0;
-      padding: 0;
-    }
-
-    padding-top: 32px;
-
-    justify-content: space-between;
-  }
-
-  .footer_copyright {
-    font-family: "General Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-
-    color: #ffffff;
-  }
-
-  .footer_declarations {
-    display: flex;
-    flex-direction: row;
-    gap: calc((20 / 1920) * 100vw);
-  }
-
-  .footer_items {
-    font-family: "General Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-
-    color: #ffffff;
-
-    margin: 0;
-    padding: 0;
-    margin-top: 24px;
-    margin-bottom: 24px;
-  }
-
-  .footer_title {
-    /* Services */
-
-    font-family: "General Sans";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-
-    color: #ffffff;
-
-    margin: 0;
-    margin-bottom: 40px;
-  }
+  padding: 117px 6.25vw;
+  background: linear-gradient(180deg, rgba(173, 90, 204, 0.2) 0%, rgba(87, 45, 102, 0.2) 100%);
 }
-/* f o o t e r  e n d */
+section#footer-section .footer-col-2 {
+  display: flex;
+  flex-direction: row;
+  width: 52.8125vw;
+  justify-content: space-between;
+}
+section#footer-section #footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* #col_1 {
+    background: rgb(52, 37, 62);
+    width: 112px;
+    height: 272px;
+  }
 
+  #col_2 {
+    background: rgb(52, 37, 62);
+    width: 174px;
+    height: 272px;
+  }
+
+  #col_3 {
+    background: rgb(52, 37, 62);
+    width: 292px;
+    height: 272px;
+  } */
+}
+section#footer-section #footer-top #footer-logo svg {
+  width: 256px;
+  height: auto;
+}
+section#footer-section #footer-top #footer-logo-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-content: flex-start;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 0.2083333333vw;
+  gap: 1.6666666667vw;
+  margin-bottom: 67px;
+}
+section#footer-section #footer-top .husig_cta {
+  width: 403px;
+  height: 86px;
+}
+section#footer-section #footer-bottom {
+  margin-top: 51px;
+  border-top: 1px solid white;
+  display: flex;
+  padding-top: 32px;
+  justify-content: space-between;
+}
+section#footer-section #footer-bottom p {
+  margin: 0;
+  padding: 0;
+}
+section#footer-section .footer_copyright {
+  font-family: "General Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+section#footer-section .footer_declarations {
+  display: flex;
+  flex-direction: row;
+  gap: 1.0416666667vw;
+}
+section#footer-section .footer_items {
+  font-family: "General Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+section#footer-section .footer_title {
+  /* Services */
+  font-family: "General Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+/* f o o t e r  e n d */
 main * {
   position: relative;
   z-index: 0;
@@ -395,6 +334,3 @@ main * {
 main {
   margin-top: 136px;
 }
-
-
-
