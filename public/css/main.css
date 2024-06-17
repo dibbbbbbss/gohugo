@@ -339,14 +339,12 @@ main {
   margin-top: 136px;
 }
 
-@media (max-width: 768px) {
-
-
+@media (max-width: 480px) {
   .husig_header .cta {
     display: none;
   }
 
-  .husig_header nav.header_menu{
+  .husig_header nav.header_menu {
     display: none;
   }
 
@@ -359,7 +357,9 @@ main {
   }
 
   .husig_header .logo svg {
-    width: calc((96/393)*100vw);
+    min-width: 98px;
+    height: auto;
+    width: auto;
   }
 
   .husig_header .logo {
@@ -369,6 +369,6 @@ main {
   .husig_header {
     overflow-y: hidden;
     align-items: first baseline;
+    padding: 27px 24px;
   }
-
 }

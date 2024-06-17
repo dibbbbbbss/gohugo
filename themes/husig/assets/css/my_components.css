@@ -93,7 +93,8 @@
 }
 
 #Section4Shimmy {
-  top: 0;
+  top: 0px;
+  position: absolute;
   opacity: 0.15;
 }
 
