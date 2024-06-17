@@ -115,3 +115,47 @@
   top: 300px;
   opacity: 0.1;
 }
+
+
+/* homepage companies ROW */
+div.section_3_companies {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+ #row-1-techs {
+  min-width: calc((1213/1920)*100vw);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  
+ }
+ #row-2-techs {
+  width: calc((1041/1920)*100vw);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+
+  
+ }
+ #row-3-techs {
+  min-width: calc((1213/1920)*100vw);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  
+ }
+
+
+
+}
+/* end */
