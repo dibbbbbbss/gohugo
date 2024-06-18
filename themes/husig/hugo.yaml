@@ -54,22 +54,22 @@ menu:
 # platforms tab
     - name: "Platforms"
       identifier: "platforms_child"
-      url: "#"
+      url: "/platform/"
       weight: 3
 
     - name: "HuSig Fabri"
       parent: "platforms_child"
-      url: "/husig-fabri/"
+      url: "/platform/#husig-fabri"
       weight: 3
 
     - name: "HuSig Incog"
       parent: "platforms_child"
-      url: "/husig-incog/"
+      url: "/platform/#husig-incog"
       weight: 3
 
     - name: "HuSig Harmony"
       parent: "platforms_child"
-      url: "/husig-harmony/"
+      url: "/platform/#husig-harmony/"
       weight: 3
 
     

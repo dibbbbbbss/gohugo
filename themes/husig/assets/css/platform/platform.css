@@ -1,0 +1,70 @@
+h1#plat_Header_1 {
+  margin-top: 151px;
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  /* identical to box height, or 112% */
+
+  /* white */
+  color: #ffffff;
+}
+
+div.plat_div_top {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+section.plat_desk_section {
+  margin-left: calc((262 / 1920) * 100vw);
+  margin-right: calc((262 / 1920) * 100vw);
+  margin-top: 96px;
+}
+
+section.plat_desk_section .serv_Title {
+  padding: 0;
+  margin: 0;
+}
+
+section.plat_desk_section h2.top_section_h2 {
+  padding: 0;
+  margin: 0;
+
+  font-family: "General Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #ffffff;
+  max-width: calc((828 / 1920) * 100vw);
+  margin-top: 16px;
+}
+
+/* bottom section */
+
+div.plat_div_bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 56px;
+}
+
+div.plat_left_div {
+  max-width: calc((691 / 1920) * 100vw);
+}
+
+div.plat_left_div img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-width: 691px;
+
+}
+
+div.plat_right_div {
+    width: 100%;
+
+}
