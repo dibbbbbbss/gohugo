@@ -1,0 +1,102 @@
+
+:root {
+    --hgPurple : rgba(173, 90, 204, 1);
+}
+
+.serv_Header {
+  padding: 0;  
+  margin: 0;
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  color: #ffffff;
+
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.serv_Title {
+    padding: 0;  
+  margin: 0;
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  /* identical to box height, or 117% */
+
+  /* white */
+  color: #ffffff;
+
+  margin-top: 96px;
+
+}
+
+.serv_PurpleTitle {
+    padding: 0;  
+  margin: 0;
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+
+  /* amethyst-primary */
+  color: var(--hgPurple);
+}
+
+.serv_Para {
+    padding: 0;  
+  margin: 0;
+  font-family: "General Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #ffffff;
+}
+
+.serv_ListText {
+    padding: 0;  
+  margin: 0;
+  font-family: "General Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.head_space_serv {
+    padding-top: 151px;
+  }
+  
+  .husig_dsk_sec_pad_1 {
+    padding-bottom: 0;
+    margin: 0;
+    padding-left: calc((120/1920)*100vw);
+    padding-right: calc((120/1920)*100vw);
+  }
+
+  .serv_Line_div {
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--hgPurple);
+    width: 100%;
+    margin-top: 11.5px;
+    margin-bottom: 80.5px;
+    
+    
+  }
+
+/* ids */
+
+
+

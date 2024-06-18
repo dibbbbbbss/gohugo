@@ -32,22 +32,22 @@ menu:
 # services tab
     - name: "Services" 
       identifier: "services_child"
-      url: "#"
+      url: "/services/"
       weight: 2
 
     - name: "Analytics"
       parent: "services_child"
-      url: "/analytics/"
+      url: "/services/#analytics"
       weight: 2
 
     - name: "Decision Sciences"
       parent: "services_child"
-      url: "/decision-sciences/"
+      url: "/services/#decision-sciences"
       weight: 2
 
     - name: "Data Engineering and Infra"
       parent: "services_child"
-      url: "/data-engineering-and-infra/"
+      url: "/services/#data-eng"
       weight: 2
 
 

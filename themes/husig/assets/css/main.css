@@ -336,7 +336,7 @@ main * {
 }
 
 main {
-  margin-top: 136px;
+  padding-top: 136px;
 }
 
 @media (max-width: 480px) {
@@ -349,7 +349,7 @@ main {
   }
 
   main {
-    margin-top: 80px;
+    paddin-top: 80px;
   }
 
   .husig_header {
