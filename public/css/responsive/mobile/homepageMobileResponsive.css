@@ -7,7 +7,8 @@
   div.dropdown-mobile_123 {
     display: block !important;
   }
-  body , body * {
+  body,
+  body * {
     overflow-x: hidden !important;
   }
   section.hero_section {
@@ -167,10 +168,6 @@
     background-color: #555;
   }
   /* Media query for mobile view */
-
-
-
-
 }
 @media (max-width: 480px) and (max-width: 480px) {
   #sec2-buttons {
@@ -282,6 +279,7 @@
     align-items: center !important;
   }
   section#home-sec-4 ul.sec-4 .list_icon_image {
+    max-width: 16px;
     min-width: 16px;
   }
   section#home-sec-4 article.homepage_article {
@@ -339,7 +337,7 @@
   }
   section#home-testimonials-section div.testimonial_card {
     width: 494px;
-    height: 285.17px;
+    height: auto;
   }
   section#home-testimonials-section div#testimonials-slider {
     gap: 28.83px;
@@ -347,7 +345,89 @@
 
   section#home-testimonials-section #slider-container {
     overflow-x: auto !important;
+  }
 
+  section#home-testimonials-section #testimonials-slider div.testimonial_card {
+    padding: 28.8px;
+    margin: 0;
+    padding-top: 32.41px;
+  }
+
+  section#home-testimonials-section div.testimonial_card img.card_image {
+    width: 48.25px;
+    height: auto;
+  }
+
+  section#home-testimonials-section div.testimonial_card p.description {
+    font-family: "General Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* white */
+    color: #ffffff;
+
+    margin-top: 14.4px !important;
+  }
+
+  /* faq section mobile responsive */
+
+  div#faq-title {
+    margin: 0;
+    padding: 0;
+    margin-top: 137px;
+    padding-left: calc((24 / 393) * 100vw);
+    padding-right: calc((24 / 393) * 100vw);
+    margin-bottom: 45px;
+  }
+
+  section#faq-accordion {
+    padding: 0;
+    margin: 0;
+    padding-left: calc((24 / 393) * 100vw);
+    padding-right: calc((24 / 393) * 100vw);
+  }
+
+  section#faq-accordion div.faq-cat {
+    width: 184px;
+    height: 50px;
+    border-radius: 0px;
+
+    font-size: 16px;
+    line-height: 21.6px;
+    font-weight: 600;
+  }
+
+  section#faq-accordion button.accordion-header {
+    overflow-y: hidden;
+
+    font-size: 16px;
+    line-height: 19.2px;
+
+    padding: 24px 32px 24px 32px;
+  }
+
+  section#faq-accordion img.open_close {
+    min-width: 32px;
+    min-height: 32px;
+  }
+  section#faq-accordion div.accordion-content {
+
+
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 400;
+
+  }
+
+  section#faq-accordion {
+    padding-bottom: 64px;
+  }
+
+
+  footer {
+    margin-top: 0 !important;
   }
 
 }
