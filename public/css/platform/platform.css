@@ -65,10 +65,10 @@ div.plat_left_div img {
 
 div.plat_right_div {
   width: 100%;
+  max-width: calc((686 / 1920) * 100vw);
 }
 
 /* Css for accordion goes here  */
-
 
 /* CSS for unique accordion goes here */
 
@@ -119,66 +119,62 @@ div.plat_right_div {
   gap: 24px;
 }
 
-.unique-accordion-item {
-  border: 1px solid rgb(173, 90, 204);
+.accordion-item-2 {
+  border: 2px solid hsla(267, 53%, 48%, 1);
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 24px;
   height: max-content;
 }
 
-.unique-accordion-item:last-child {
-  border-bottom: none;
-}
+
 
 .unique-accordion-header {
   width: 100%;
-  padding: 29px 32px 25px 32px;
+  padding: 40px 40px 32px 40px;
   font-size: 16px;
   text-align: left;
-  background: rgba(81, 43, 129, 0.1);
+  background: hsla(267, 50%, 34%, 0.1);
   border: none;
   outline: none;
   cursor: pointer;
   color: white;
   font-family: "General Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 24px;
   line-height: 120%;
   /* identical to box height, or 29px */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   /* white */
   color: #ffffff;
-  border-radius: 12px;
-  height: 85px;
+  height: max-content;
+  gap: 16px;
 }
 .unique-accordion-header p {
   margin: 0;
   padding: 0;
+
 }
 
 .unique-accordion-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-  background-color: white;
   background: rgba(81, 43, 129, 0.1);
   font-family: "General Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   display: flex;
   align-items: center;
-  color: #9a9a9a;
+  color: white;
 }
 
 .unique-accordion-content p {
   margin: 0;
 }
-
-
 
 .unique-open-close {
   transition: transform 0.3s;
@@ -189,5 +185,15 @@ div.plat_right_div {
   transform: rotate(-45deg);
 }
 
+#serv-pag-list-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+div.accordion-123 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
 /* accordion css ends */

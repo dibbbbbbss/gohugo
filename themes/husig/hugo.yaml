@@ -69,7 +69,7 @@ menu:
 
     - name: "HuSig Harmony"
       parent: "platforms_child"
-      url: "/platform/#husig-harmony/"
+      url: "/platform/#husig-harmony"
       weight: 3
 
     

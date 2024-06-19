@@ -68,87 +68,46 @@
       });
     });
   });
-  document.addEventListener("DOMContentLoaded", function() {
-    const scrollContainer = document.getElementById("slider-container");
-    const halfwayScroll = (scrollContainer.scrollWidth - scrollContainer.clientWidth) / 2;
-    scrollContainer.scrollLeft = halfwayScroll;
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-    scrollContainer.addEventListener("mousedown", (e) => {
-      isDown = true;
-      scrollContainer.classList.add("active");
-      startX = e.pageX - scrollContainer.offsetLeft;
-      scrollLeft = scrollContainer.scrollLeft;
-      scrollContainer.style.cursor = "grabbing";
-    });
-    scrollContainer.addEventListener("mouseleave", () => {
-      isDown = false;
-      scrollContainer.classList.remove("active");
-      scrollContainer.style.cursor = "grab";
-    });
-    scrollContainer.addEventListener("mouseup", () => {
-      isDown = false;
-      scrollContainer.classList.remove("active");
-      scrollContainer.style.cursor = "grab";
-    });
-    scrollContainer.addEventListener("mousemove", (e) => {
-      if (!isDown)
-        return;
-      e.preventDefault();
-      const x = e.pageX - scrollContainer.offsetLeft;
-      const walk = (x - startX) * 2;
-      scrollContainer.scrollLeft = scrollLeft - walk;
-    });
-  });
-  document.addEventListener("DOMContentLoaded", function() {
-    function toggleDropdown_123() {
-      const dropdownMenu = document.getElementById("dropdownMenu_123");
-      if (dropdownMenu.style.display === "block") {
-        dropdownMenu.style.display = "none";
-      } else {
-        dropdownMenu.style.display = "block";
-      }
-    }
-    document.querySelector(".dropdown-toggle_123").onclick = toggleDropdown_123;
-    window.onclick = function(event) {
-      if (!event.target.matches(".dropdown-toggle_123")) {
-        const dropdowns = document.getElementsByClassName("dropdown-menu_123");
-        for (let i = 0; i < dropdowns.length; i++) {
-          const openDropdown = dropdowns[i];
-          if (openDropdown.style.display === "block") {
-            openDropdown.style.display = "none";
-          }
-        }
-      }
-    };
-  });
   document.addEventListener("DOMContentLoaded", () => {
-    const uniqueAccordionHeaders = document.querySelectorAll(
-      ".unique-accordion-header"
-    );
+    const uniqueAccordionHeaders = document.querySelectorAll(".unique-accordion-header");
     uniqueAccordionHeaders.forEach((header) => {
       header.addEventListener("click", () => {
         const content = header.nextElementSibling;
         const icon = header.querySelector(".unique-open-close");
         if (content.style.maxHeight) {
           content.style.maxHeight = null;
-          content.style.padding = "0 32px";
+          content.style.padding = "0 40px";
           icon.classList.remove("rotate-icon");
         } else {
           document.querySelectorAll(".unique-accordion-content").forEach((c) => {
             c.style.maxHeight = null;
-            c.style.padding = "0 32px";
+            c.style.padding = "0 40px";
             const otherIcon = c.previousElementSibling.querySelector(".unique-open-close");
             if (otherIcon) {
               otherIcon.classList.remove("rotate-icon");
             }
           });
-          content.style.maxHeight = "62px";
-          content.style.padding = "8px 32px 22px 32px";
+          content.style.maxHeight = "301px";
+          content.style.padding = "0px 40px 40px 40px";
           icon.classList.add("rotate-icon");
         }
       });
     });
+  });
+  document.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash;
+    const buttonMappings = {
+      "#husig-fabri": ".husig_fabri_first_button",
+      "#husig-incog": ".husig_incog_first_button",
+      "#husig-harmony": ".husig_harmony_first_button"
+      // Add more mappings as needed
+    };
+    const buttonClass = buttonMappings[hash];
+    if (buttonClass) {
+      const button = document.querySelector(buttonClass);
+      if (button) {
+        button.click();
+      }
+    }
   });
 })();
