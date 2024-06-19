@@ -126,6 +126,12 @@ div.clients div.clients_row {
   gap: 4vw;
 }
 
+div.clients_row .clients_row_images {
+  max-height: 72px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* -------------------------------------------------------------------------------------------------- */
 /* homepage : section 2 */
 section#homepage-section-2 {

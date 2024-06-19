@@ -14,20 +14,20 @@ menu:
       url: "/about/"
       weight: 1
 
-    - name: "Our Team"
-      parent: "company_child"
-      url: "/our-team/"
-      weight: 1
+    # - name: "Our Team"
+    #   parent: "company_child"
+    #   url: "/our-team/"
+    #   weight: 1
 
-    - name: "Careers"
-      parent: "company_child"
-      url: "/careers/"
-      weight: 1
+    # - name: "Careers"
+    #   parent: "company_child"
+    #   url: "/careers/"
+    #   weight: 1
 
-    - name: "Blogs"
-      parent: "company_child"
-      url: "/blogs/"
-      weight: 1
+    # - name: "Blogs"
+    #   parent: "company_child"
+    #   url: "/blogs/"
+    #   weight: 1
 
 # services tab
     - name: "Services" 

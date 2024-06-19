@@ -7,7 +7,7 @@
   div.dropdown-mobile_123 {
     display: block !important;
   }
-  body * {
+  body , body * {
     overflow-x: hidden !important;
   }
   section.hero_section {
@@ -66,6 +66,13 @@
     overflow-x: hidden !important;
     gap: 8.2697201018vw !important;
   }
+
+  div.clients div.clients_row .clients_row_images {
+    max-height: 31px;
+    width: auto;
+    object-fit: contain;
+  }
+
   div.clients h3 {
     margin: 0 !important;
     margin-bottom: 25px !important;
@@ -160,6 +167,10 @@
     background-color: #555;
   }
   /* Media query for mobile view */
+
+
+
+
 }
 @media (max-width: 480px) and (max-width: 480px) {
   #sec2-buttons {
