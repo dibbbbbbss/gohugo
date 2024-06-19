@@ -210,6 +210,7 @@
   }
   .tab-content .right .icon-list .list_icon_image {
     max-width: 16px;
+    min-width: 16px;
   }
   .tab-content .right .learn_more_cta {
     width: 100%;
@@ -281,7 +282,7 @@
     align-items: center !important;
   }
   section#home-sec-4 ul.sec-4 .list_icon_image {
-    width: 16px;
+    min-width: 16px;
   }
   section#home-sec-4 article.homepage_article {
     gap: 144px;
