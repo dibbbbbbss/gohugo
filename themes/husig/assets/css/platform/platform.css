@@ -188,6 +188,10 @@ div.plat_right_div {
 #serv-pag-list-icon {
   display: flex;
   flex-direction: column;
+  min-width: 24px;
+  max-width: 24px;
+  height: auto;
+  
 }
 
 div.accordion-123 {
