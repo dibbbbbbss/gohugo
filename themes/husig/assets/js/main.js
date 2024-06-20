@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
             otherIcon.classList.remove("rotate-icon");
           }
         });
-        content.style.maxHeight = "301px";
+        content.style.maxHeight = "max-content";
         content.style.padding = "0px 40px 40px 40px";
         icon.classList.add("rotate-icon");
       }
