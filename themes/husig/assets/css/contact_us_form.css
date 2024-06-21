@@ -124,7 +124,7 @@
 /* end #3 */
 
 
-@media (max-height: 1256px) {
+@media (max-width: 1256px) {
   #contact-us::after {
     content: "";
     background-image: url("../images/homepage/contact_us_background.webp");
@@ -154,6 +154,13 @@
     margin: auto;
     display: flex;
     flex-direction: row;
+
+    /* cap */
+
+    max-width: 768px;
+
+    /*  */
+
   }
   #contact-us .husig_h2_tag {
     padding: 0;
