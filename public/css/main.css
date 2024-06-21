@@ -372,49 +372,5 @@ main {
     padding: 27px 24px;
   }
 
-  /* code for footer css goes here */
-
-  section#contact-us {
-    display: flex;
-    flex-direction: column;
-  }
-
-  section#contact-us div.label_group {
-    width: 100%;
-  }
-  section#contact-us div#right-contact {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    padding: 40px;
-
-  }
-  section#contact-us div#right-contact input,
-  section#contact-us div#right-contact textarea#contact-message {
-    width: 100%;
-  }
-
-
-  section#contact-us div#left-contact {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    padding: 40px;
-    padding-bottom: 0;
-
-
-  }
-
-  section#contact-us div#left-contact img {
-    width: 100%;
-  }
-
- section#footer-section div#footer-top {
-  display: flex;
-  flex-direction: column;
- }
-
-
-
-  /* code for footer css end */
+  
 }
