@@ -1,7 +1,12 @@
 <section id="contact-us">
   <div id="left-contact">
     <h2 class="husig_h2_tag">Contact Us</h2>
-    <img  src="../images/homepage/contact_us_HerO.webp" alt="contactus">
+
+{{- with resources.Get "images/homepage/contact_us_HerO.webp"}}
+
+    <img  src="{{ .RelPermalink }}" alt="contactus">
+
+{{- end }}    
   </div>
   <div id="right-contact">
     <div class="label_group">
